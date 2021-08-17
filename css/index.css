@@ -1,0 +1,144 @@
+#fishes{
+  animation: move_wave 10s linear infinite;
+
+}
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+#text1{
+  position: absolute;
+  bottom: 400px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 6em italic;
+  z-index: 1;
+}
+#text2{
+
+  bottom: 500px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 6em;
+
+}
+#text3{
+  position: absolute;
+  bottom: 500px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 6em;
+  z-index: 1;
+}
+
+body,
+html{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+}
+
+svg {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+}
+
+.scrollElement {
+      position: absolute;
+      height: 6000px;
+      width: 100px;
+      top: 0;
+      z-index: 0;
+}
+
+  .btn {
+      position: fixed;
+      bottom: 5%;
+      right: 0px;
+      transform: translateX(-50%);
+      border: 1px solid #fff;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      padding: 0.5rem 0.7em;
+      background-color: transparent;
+      color: #ffffff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
+      transition: all .3s;
+      z-index: 11;
+  }
+  .btn-fire{
+    position: fixed;
+    bottom: 5%;
+    left:50px;
+    right: 10px;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7em;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 11;
+  }
+  .btn-water{
+    position: fixed;
+    bottom: 5%;
+    left:150px;
+    right: 10px;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7em;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 11;
+  }
+
+  .btn_works {
+    top:0px;
+
+
+      right: unset;
+      text-decoration: none;
+  }
+
+  .btn_next {
+    top:0px;
+
+
+      right: unset;
+      text-decoration: none;
+  }
+
+  .btn:hover {
+      background: #ffffff;
+      color: #1B1734;
+  }
